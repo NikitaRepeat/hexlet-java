@@ -2,6 +2,7 @@ package hexlet.code;
 
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
+import hexlet.code.games.GCD;
 
 import java.util.Scanner;
 public class Engine {
@@ -19,6 +20,10 @@ public class Engine {
             Cli.welcomeUser();
             System.out.println("What is the result of the expression?");
             game(choiceUser);
+        } else if (choiceUser == 4) {
+            Cli.welcomeUser();
+            System.out.println("Find the greatest common divisor of given numbers.");
+            game(choiceUser);
         } else {
             System.out.println("Goodbye!");
         }
@@ -33,6 +38,8 @@ public class Engine {
                 answerRight = Even.evenGame();
             } else if (choiceUser == 3) {
                 answerRight = Calc.calculator();
+            } else if (choiceUser == 4) {
+                answerRight = GCD.gcdGame();
             } else {
                 System.out.println("Goodbye!");
             }
