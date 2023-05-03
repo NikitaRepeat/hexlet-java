@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
 import hexlet.code.games.GCD;
+import hexlet.code.games.Progression;
 
 import java.util.Scanner;
 public class Engine {
@@ -24,6 +25,10 @@ public class Engine {
             Cli.welcomeUser();
             System.out.println("Find the greatest common divisor of given numbers.");
             game(choiceUser);
+        } else if (choiceUser == 5) {
+            Cli.welcomeUser();
+            System.out.println("What number is missing in the progression?");
+            game(choiceUser);
         } else {
             System.out.println("Goodbye!");
         }
@@ -40,6 +45,8 @@ public class Engine {
                 answerRight = Calc.calculator();
             } else if (choiceUser == 4) {
                 answerRight = GCD.gcdGame();
+            } else if (choiceUser == 5) {
+                answerRight = Progression.proGame();
             } else {
                 System.out.println("Goodbye!");
             }
