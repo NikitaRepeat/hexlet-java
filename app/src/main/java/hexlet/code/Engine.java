@@ -4,6 +4,7 @@ import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
 import hexlet.code.games.GCD;
 import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 public class Engine {
@@ -29,6 +30,10 @@ public class Engine {
             Cli.welcomeUser();
             System.out.println("What number is missing in the progression?");
             game(choiceUser);
+        } else if (choiceUser == 6) {
+            Cli.welcomeUser();
+            System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
+            game(choiceUser);
         } else {
             System.out.println("Goodbye!");
         }
@@ -47,6 +52,8 @@ public class Engine {
                 answerRight = GCD.gcdGame();
             } else if (choiceUser == 5) {
                 answerRight = Progression.proGame();
+            } else if (choiceUser == 6) {
+                answerRight = Prime.primeGame();
             } else {
                 System.out.println("Goodbye!");
             }

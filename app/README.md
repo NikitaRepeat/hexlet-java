@@ -7,3 +7,5 @@ EVEN + CALC: https://asciinema.org/a/k47yqK8eryuawgBS8GakTJKN7
 GCD: https://asciinema.org/a/k5ENkw9x0NQ2UCY7WSFf5sKza
 
 PROGRESSION: https://asciinema.org/a/qiXzSVVMAP5U0D0jJHweyPXch
+
+Prime: https://asciinema.org/a/KcKUcX0TuaUox1fnxXtA6Klp6
